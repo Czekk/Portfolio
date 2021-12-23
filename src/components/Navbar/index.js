@@ -1,16 +1,16 @@
-import React, {useState} from 'react';
+import React from 'react';
 // import {Link, NavLink} from 'react-router-dom';
-import {Nav, NavbarContainer, NavLogo, MobileIcon, NavLinks, NavMenu, NavItem, NavButtton, NavButtonLink} from './NavbarElements';
+import {Nav, NavbarContainer, NavLogo, MobileIcon, NavLinks, NavMenu, NavItem, NavButtton, NavButtonLink, SendIcon} from './NavbarElements';
 import {FaBars} from 'react-icons/fa'
 
 
-const Navbar = () => {
+const Navbar = ({toggle}) => {
     return (
         <>
             <Nav className='navbar'>
                 <NavbarContainer className= 'Navbar-container'>
                     <NavLogo to='/'>Czerinton Kunaraja</NavLogo>
-                    <MobileIcon>
+                    <MobileIcon onClick={toggle}>
                         <FaBars/>
                     </MobileIcon>
                     <NavMenu>
@@ -28,7 +28,7 @@ const Navbar = () => {
                         </NavItem>
                     </NavMenu> 
                     <NavButtton>
-                        <NavButtonLink to = "GetInTouch">Get in touch!</NavButtonLink>
+                        <NavButtonLink to = "GetInTouch">Get in touch <SendIcon/></NavButtonLink>
                     </NavButtton>
                 </NavbarContainer>
             </Nav>

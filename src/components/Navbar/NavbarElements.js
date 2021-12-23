@@ -1,6 +1,7 @@
 import styled from 'styled-components';
 import {Link as LinkR} from 'react-router-dom';
 import {Link as LinkS} from 'react-scroll';
+import { FaTelegramPlane } from 'react-icons/fa';
 
 export const Nav = styled.nav`
     background: #12263A;
@@ -32,7 +33,7 @@ export const NavLogo = styled(LinkR)`
     color: #C5D8D1;
     justify-self: flex-start;
     cursor: pointer;
-    font-size: 1.5;
+    font-size: 1.4rem;
     display:flex;
     align-items: center;
     margin-left: 24px;
@@ -92,14 +93,14 @@ export const NavButtton = styled.nav`
     }
 `
 export const NavButtonLink = styled(LinkR)`
-Border-radius: 50px;
+border-radius: 50px;
 background: #F4EDEA;
 white-space: nowrap;
 padding: 10px 22px;
 color: #12263A;
 font-size: 16px;
 outline: none;
-Border: none;
+border: none;
 cursor: pointer;
 transition: all 0.2s ease-in-out;
 text-decoration: none;
@@ -109,4 +110,8 @@ text-decoration: none;
     background: #F4D1AE;
     color: #06BCC1;
 }
+`
+export const SendIcon = styled(FaTelegramPlane)`
+margin-left: 5px;
+margin-bottom: -3px;
 `
