@@ -6,6 +6,7 @@ import { FaTelegramPlane } from 'react-icons/fa';
 export const Nav = styled.nav`
     background: #12263A;
     heigth: 80px;
+    margin-top: -80px;
     display: flex;
     justify-content: left;
     align-items: center;
@@ -30,7 +31,7 @@ export const NavbarContainer = styled.div`
 `
 
 export const NavLogo = styled(LinkR)`
-    color: #C5D8D1;
+    color: #fff;
     justify-self: flex-start;
     cursor: pointer;
     font-size: 1.4rem;
