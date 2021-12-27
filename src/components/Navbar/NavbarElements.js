@@ -82,7 +82,7 @@ export const NavLinks = styled(LinkS)`
     cursor: pointer;
 
     &.active {
-        border-botttom: 3px solid #01bf71;  
+        border-botttom: 3px solid #F4EDEA;  
     }
 `
 export const NavButtton = styled.nav`

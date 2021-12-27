@@ -9,7 +9,7 @@ const Navbar = ({toggle}) => {
         <>
             <Nav className='navbar'>
                 <NavbarContainer className= 'Navbar-container'>
-                    <NavLogo to='/'>Czerinton Kunaraja</NavLogo>
+                    <NavLogo to='/' spy="true" offset={80}>Czerinton Kunaraja</NavLogo>
                     <MobileIcon onClick={toggle}>
                         <FaBars/>
                     </MobileIcon>
@@ -18,7 +18,7 @@ const Navbar = ({toggle}) => {
                             <NavLinks to = "Welcome">Welcome</NavLinks>
                         </NavItem>
                         <NavItem>
-                            <NavLinks to = "Projects">Projects</NavLinks>
+                            <NavLinks to = "Projects" spy= {true} smooth = {true} exact='true' duration= {500}>Projects</NavLinks>
                         </NavItem>
                         <NavItem>
                             <NavLinks to = "About">About</NavLinks>
