@@ -2,7 +2,7 @@ import React from 'react'
 import { FaBootstrap, FaCss3Alt, FaDocker, FaHtml5, FaLinux, FaNodeJs, FaNpm, FaReact, FaPython, FaJava, FaGit, FaAws } from 'react-icons/fa'
 import {IoLogoJavascript} from 'react-icons/io'
 import {SiExpress, SiMongodb, SiKubernetes, SiTypescript, SiJira} from 'react-icons/si'
-import { AboutContainer, AboutBodyWrapper, AboutAside, ProfileImg, ProfileDescription, SocialContainer,
+import { AboutContainer, AboutBodyWrapper, AboutAside, ProfileImgContainer, ProfileImg, ProfileDescription, SocialContainer,
      AboutMain, AboutH1, AboutP, BsGithubIcon, BsLinkedinIcon, MdEmailIcon, Name, Title, Icon, 
      ContactButton, FaTelegramPlaneIcon, ButtonWrapper, TechStackGroup } from './AboutSectionElements'
 import ProfilePic2 from '../../images/ProfilePic2.jpeg'
@@ -13,21 +13,21 @@ const AboutSection = () => {
             <AboutContainer>
                 <AboutBodyWrapper>
                     <AboutAside>
-                        <profileImgContainer>
+                        <ProfileImgContainer>
                             <ProfileImg src= {ProfilePic2}/>
-                        </profileImgContainer>
+                        </ProfileImgContainer>
                         <ProfileDescription>
                             <Name>Czerinton Kunaraja</Name>
                             <Title>B.Sc Computer Science</Title>
                             <Title>FullStack Application Developer</Title>
-                            <hr/>
+                            {/* <hr/>
                             <Title><strong>Skills: </strong></Title>
                             <Title>Responsive design</Title>
                             <Title>Reusable Component Development</Title>
                             <Title>Test Driven Development</Title>
                             <Title>Containerization / Dockerize</Title>
                             <Title>MicroServices Architecture</Title>
-                            <Title>Cross-platform ios and Android mobile development</Title>
+                            <Title>Cross-platform ios and Android mobile development</Title> */}
                         </ProfileDescription>
                         <SocialContainer>
                             <BsGithubIcon/>

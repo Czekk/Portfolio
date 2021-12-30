@@ -1,11 +1,12 @@
-import React from 'react'
+import {React, useState} from 'react'
 import { FaGithub } from 'react-icons/fa'
 import {CgWebsite} from 'react-icons/cg'
-import { ProjectsBg, ProjectsH1, ProjectsContainer, ProjectsCard, CardImg, ProjectTitle, ProjectsP, ViewBtn, GithubBtn } from './ProjectsElements'
+import { ProjectsBg, ProjectsH1, ProjectsContainer, ProjectsCard, CardImg, ProjectTitle, ProjectsP, ViewBtn, GithubBtn, AboutMeBtn, FaChevronDownIcon } from './ProjectsElements'
 import image from '../../images/portfolio.png'
 import { project1, project2, project3, project4, project5, project6, project7, project8} from './Data'
 
 const ProjectsSection = () => {
+    const [over, setOver] = useState(0);
     return (
         <>
             <ProjectsBg>
@@ -56,6 +57,7 @@ const ProjectsSection = () => {
                         <GithubBtn href=""><FaGithub/> Checkout the code  </GithubBtn>
                     </ProjectsCard>
                 </ProjectsContainer>
+                <AboutMeBtn onMouseOver={() => setOver(true)} onMouseLeave={() => setOver(false)}>About <FaChevronDownIcon over = {over}/></AboutMeBtn>
             </ProjectsBg>  
         </>
     )

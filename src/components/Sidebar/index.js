@@ -24,7 +24,7 @@ const Sidebar = ({isOpen, toggle}) => {
                     </SidebarLink> 
                 </SidebarMenu>
                 <SideBtnWrap>
-                    <SidebarRoute to = '/GetInTouch'>Get in Touch<SendIcon/></SidebarRoute>
+                    <SidebarRoute to = 'contact'>Get in Touch<SendIcon/></SidebarRoute>
                 </SideBtnWrap>
             </SidebarWrapper>         
         </SidebarContainer>
