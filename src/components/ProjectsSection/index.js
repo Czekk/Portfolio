@@ -1,12 +1,16 @@
 import {React, useState} from 'react'
 import { FaGithub } from 'react-icons/fa'
 import {CgWebsite} from 'react-icons/cg'
-import { ProjectsBg, ProjectsH1, ProjectsContainer, ProjectsCard, CardImg, ProjectTitle, ProjectsP, ViewBtn, GithubBtn, AboutMeBtn, FaChevronDownIcon } from './ProjectsElements'
+import { ProjectsBg, ProjectsH1, ProjectsContainer, ProjectsCard, CardImg, ProjectTitle, ProjectsP, ViewBtn, GithubBtn, AboutMeBtn, FaChevronDownIcon, More } from './ProjectsElements'
 import image from '../../images/portfolio.png'
 import { project1, project2, project3, project4, project5, project6, project7, project8} from './Data'
+import { animateScroll as scroll } from 'react-scroll'
 
 const ProjectsSection = () => {
     const [over, setOver] = useState(0);
+    const scrollTo = () => {
+        scroll.scrollMore(window.innerHeight*.8)
+    }
     return (
         <>
             <ProjectsBg>
@@ -57,7 +61,9 @@ const ProjectsSection = () => {
                         <GithubBtn href=""><FaGithub/> Checkout the code  </GithubBtn>
                     </ProjectsCard>
                 </ProjectsContainer>
-                <AboutMeBtn onMouseOver={() => setOver(true)} onMouseLeave={() => setOver(false)}>About <FaChevronDownIcon over = {over}/></AboutMeBtn>
+                <More onClick={scrollTo} duration={500} smooth={true} exact='true' onMouseOver={() => setOver(true)} onMouseLeave={() => setOver(false)}>More <FaChevronDownIcon over = {over}/></More>
+                <AboutMeBtn to='AboutSection' offset={-80} duration={500} smooth={true} exact='true' 
+                onMouseOver={() => setOver(true)} onMouseLeave={() => setOver(false)}>About <FaChevronDownIcon over = {over}/></AboutMeBtn>
             </ProjectsBg>  
         </>
     )

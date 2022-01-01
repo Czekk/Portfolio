@@ -6,6 +6,7 @@ import ProjectsSection from '../components/ProjectsSection'
 import AboutSection from '../components/AboutSection';
 import ContactSection from '../components/ContactSection';
 import Footer from '../components/Footer';
+import { Element } from 'react-scroll';
 
 
 const Home = () => {
@@ -18,10 +19,10 @@ const Home = () => {
         <>
             <Sidebar isOpen= {isOpen} toggle={toggle}/>
             <Navbar toggle= {toggle}/>
-            <HeroSection id= "Welcome"/>
-            <ProjectsSection id= "Projects"/>
-            <AboutSection id= "About"/>
-            <ContactSection id= "Contact"/>
+            <Element name="HeroSection"><HeroSection /></Element>
+            <Element name="ProjectsSection"><ProjectsSection /></Element>
+            <Element name="AboutSection"><AboutSection/></Element>
+            <Element name="ContactSection"><ContactSection/></Element>
             <Footer/>
         </>
     )

@@ -2,6 +2,7 @@ import React, {useState} from 'react';
 import { HeroContainer, HeroBg, VideoBg, HeroContent, HeroH1,HeroP, HeroBtnWrapper, ArrowCircleDown, ArrowDown } from './HeroSectionElements';
 import Video from '../../videos/video.mp4';
 import { Button } from '../ButtonElements';
+import Typical from 'react-typical'
 
 
 export const HeroSection = () => {
@@ -17,13 +18,21 @@ export const HeroSection = () => {
             </HeroBg>
             <HeroContent>
                 <HeroH1>
-                    Welcome to my page!
+                    Hello, Welcome to my page!
                 </HeroH1>
-                <HeroP>
-                    I am a Mern stack application deveoper with experience building scalable, responsive, and robust applications.
-                </HeroP>
+                <Typical steps= {
+                ['I am a MERN stack application developer', 500, 
+                'with experience building', 500, 
+                'responsive',500, 
+                'robust', 500, 
+                'and scalable',500,
+                'mobile and web applications',500
+                ]}
+                loop={Infinity}
+                wrapper= {HeroP}
+                />
                 <HeroBtnWrapper>
-                    <Button to='projects' onMouseEnter = {onHover} onMouseLeave = {onHover} primary= 'true' dark= 'true'>View my projects {hover? <ArrowDown/>:<ArrowCircleDown/>}</Button>
+                    <Button to='ProjectsSection' onMouseEnter = {onHover} onMouseLeave = {onHover} primary= 'true' dark= 'true' smooth={true} offset={-80} exact='true'>View my projects {hover? <ArrowDown/>:<ArrowCircleDown/>}</Button>
                 </HeroBtnWrapper>
             </HeroContent>
         </HeroContainer>

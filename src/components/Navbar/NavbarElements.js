@@ -81,10 +81,8 @@ export const NavLinks = styled(LinkS)`
     padding: 0 1rem;
     height: 100%;
     cursor: pointer;
-
-    &.active {
-        border-botttom: 3px solid #F4EDEA;  
-    }
+    border-bottom: ${({active}) => (active? '3px solid #fff' : 'none')};
+    transistion: all 0.2s ease-in-out;
 `
 export const NavButtton = styled.nav`
     display: flex;
@@ -94,23 +92,25 @@ export const NavButtton = styled.nav`
         display: none;
     }
 `
-export const NavButtonLink = styled(LinkR)`
+export const NavButtonLink = styled(LinkS)`
 border-radius: 50px;
-background: #F4EDEA;
+background: #fff;
 white-space: nowrap;
 padding: 10px 22px;
 color: #12263A;
 font-size: 16px;
+font-weight: bold;
 outline: none;
 border: none;
 cursor: pointer;
+box-shadow: 1px 1px 1px 1px grey;
 transition: all 0.2s ease-in-out;
 text-decoration: none;
 
 &:hover {
     transistion: all 0.2s ease-in-out;
-    background: #F4D1AE;
-    color: #06BCC1;
+    background: #C5D8D1;
+    color: #12263A;
 }
 `
 export const SendIcon = styled(FaTelegramPlane)`

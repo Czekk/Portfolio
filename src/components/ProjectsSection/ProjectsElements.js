@@ -1,4 +1,5 @@
 import { FiChevronsDown } from "react-icons/fi";
+import { Link } from "react-scroll";
 import styled from "styled-components";
 
 export const ProjectsBg = styled.div`
@@ -7,11 +8,11 @@ export const ProjectsBg = styled.div`
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 91vh;
+    height: 95vh;
     position: relative;
     z-index: 1;
 
-    @media screen and (max-width: 1024px) {
+    @media screen and (max-width: 1080px) {
         // font-size: 24px;
         // padding: 5Px 24px;
         // margin-top: 20px;
@@ -37,7 +38,7 @@ export const ProjectsH1 = styled.h1`
     text-align: center;
     width: 100%;
     height: 40px;
-    margin-top: 10px;
+    margin-top: 40px;
     marging-bottom: 0px;
     outline: none;
     border: none;
@@ -81,7 +82,7 @@ export const ProjectsCard = styled.div`
     height: 320px;
     z-index: 9999;
 
-    @media screen and (max-width: 1024px) {
+    @media screen and (max-width: 1080px) {
         // font-size: 24px;
         // padding: 5Px 24px;
         // margin-top: 0px;
@@ -194,10 +195,10 @@ z-index: 999;
     transition: all 0.2s ease-in-out;
 }
 `
-export const AboutMeBtn = styled.button`
+export const AboutMeBtn = styled(Link)`
     display: flex;
     justify-content: center;
-    position: sticky;
+    position: absolute;
     border-radius: 50px;
     margin: 20px 20px;
     padding: 5px 5px;
@@ -209,6 +210,7 @@ export const AboutMeBtn = styled.button`
     background: #fff;
     color: #12263A;
     font-size: 18px;
+    font-weight: bold;
     box-shadow: 2px 2px 2px 2px grey;
     border: none;
     outline: none;
@@ -222,8 +224,41 @@ export const AboutMeBtn = styled.button`
         transition: all .2s ease-in-out;
     }
 
-    @media screen and (max-width: 768px) {
+    @media screen and (max-width: 1080px) {
         display: none;
+    }
+`
+export const More = styled(Link)`
+    display: none;
+    justify-content: center;
+    position: sticky;
+    border-radius: 50px;
+    margin: 20px 20px;
+    padding: 5px 5px;
+    height: 30px;
+    width: 10%;
+    float: right;
+    bottom: 20px;
+    right: -10px;
+    background: #fff;
+    color: #12263A;
+    font-size: 18px;
+    font-weight: bold;
+    box-shadow: 2px 2px 2px 2px grey;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    z-index: 9999;
+    transition: all .2s ease-in-out;
+
+    &: hover {
+        background: #12263A;
+        color: #fff;
+        transition: all .2s ease-in-out;
+    }
+
+    @media screen and (max-width: 1080px) {
+        display: flex;
     }
 `
 export const FaChevronDownIcon = styled(FiChevronsDown)`

@@ -10,21 +10,21 @@ const Sidebar = ({isOpen, toggle}) => {
             </Icon>   
             <SidebarWrapper>
                 <SidebarMenu>
-                    <SidebarLink to= 'Welcome' onClick={toggle}>
+                    <SidebarLink to='HeroSection' offset={-80} smooth={true} duration= {500} exact='true' onClick={toggle}>
                         Welcome
                     </SidebarLink>
-                    <SidebarLink to= 'Projects' onClick={toggle}>
+                    <SidebarLink to='ProjectsSection' offset={-80} smooth={true} duration= {500} exact='true' onClick={toggle}>
                         Projects
                     </SidebarLink>
-                    <SidebarLink to= 'About' onClick={toggle}>
+                    <SidebarLink to='AboutSection' offset={-80} smooth={true} duration= {500} exact='true' onClick={toggle}>
                         About
                     </SidebarLink>
-                    <SidebarLink to= 'Contact' onClick={toggle}>
+                    <SidebarLink to='ContactSection' offset={-80} smooth={true} duration= {500} exact='true' onClick={toggle}>
                         Contact
                     </SidebarLink> 
                 </SidebarMenu>
                 <SideBtnWrap>
-                    <SidebarRoute to = 'contact'>Get in Touch<SendIcon/></SidebarRoute>
+                    <SidebarRoute to='ContactSection' offset={-80} smooth={true} duration= {500} exact='true' onClick={toggle} >Get in Touch<SendIcon/></SidebarRoute>
                 </SideBtnWrap>
             </SidebarWrapper>         
         </SidebarContainer>
