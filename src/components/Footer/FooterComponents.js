@@ -46,28 +46,51 @@ export const BsGithubIcon = styled(BsGithub)`
     color: #fff;
     margin: 10px;
     cursor: pointer;
+    border: none;
+    outline: none;
+    border-radius: 50px;
+    box-shadow: 2px 1px 2px 1px grey;
+    z-index: 999;
 
-    &:hover {
-        color: #F4D1AE;
-    }
+    // &:hover {
+    //     color: #12263A;
+    //     background: #fff;
+    //     font-size: 36px;
+    //     box-shadow: 1px 1px 1px 1px lightgrey;
+    // }
 `
 export const BsLinkedinIcon = styled(BsLinkedin)`
     font-size: 32px;
     color: #fff;
     margin: 10px;
     cursor: pointer;
+    border: none;
+    outline: none;
+    box-shadow: 2px 1px 2px 1px grey;
+    z-index: 999;
 
-    &:hover {
-        color: #F4D1AE;
-    }
-`
+//     &:hover {
+//         color: #12263A;
+//         background: #fff;
+//         font-size: 36px;
+//         box-shadow: 1px 1px 1px 1px lightgrey;
+//     }
+// `
 export const MdEmailIcon = styled(SiGmail)`
-    font-size: 38px;
-    color: #fff;
+    font-size: 32px;
+    color: #12263A;
+    background: #fff;
     margin: 10px;
     cursor: pointer;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    box-shadow: 2px 1px 2px 1px grey;
+    z-index: 999;
 
-    &:hover {
-        color: #F4D1AE;
-    }
-`
+//     &:hover {
+//         color: #fff;
+//         background: #12263A;
+//         font-size: 36px;
+//         box-shadow: none;
+// `

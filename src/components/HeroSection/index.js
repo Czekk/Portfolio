@@ -21,7 +21,7 @@ export const HeroSection = () => {
                     Hello, Welcome to my page!
                 </HeroH1>
                 <Typical steps= {
-                ['I am a MERN stack application developer', 500, 
+                ['I am a Full-stack (MERN) application developer', 500, 
                 'with experience building', 500, 
                 'responsive',500, 
                 'robust', 500, 
@@ -32,7 +32,7 @@ export const HeroSection = () => {
                 wrapper= {HeroP}
                 />
                 <HeroBtnWrapper>
-                    <Button to='ProjectsSection' onMouseEnter = {onHover} onMouseLeave = {onHover} primary= 'true' dark= 'true' smooth={true} offset={-80} exact='true'>View my projects {hover? <ArrowDown/>:<ArrowCircleDown/>}</Button>
+                    <Button to='ProjectsSection' onMouseEnter = {onHover} onMouseLeave = {onHover} primary= 'true' dark= 'true' duration={500} smooth={true} offset={-80} exact='true'>View my projects {hover? <ArrowDown/>:<ArrowCircleDown/>}</Button>
                 </HeroBtnWrapper>
             </HeroContent>
         </HeroContainer>

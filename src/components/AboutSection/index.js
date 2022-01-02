@@ -30,9 +30,9 @@ const AboutSection = () => {
                             <Title>Cross-platform ios and Android mobile development</Title> */}
                         </ProfileDescription>
                         <SocialContainer>
-                            <BsGithubIcon/>
-                            <BsLinkedinIcon/>
-                            <MdEmailIcon/>
+                            <a href= 'https://github.com/Czekk' target='_blank' rel='Github'><BsGithubIcon /></a>
+                            <a href='https://www.linkedin.com/in/czerinton-kunaraja-8418901b7' target='_blank' rel='LinkdIn'><BsLinkedinIcon /></a>
+                            <a href='mailto:czerintonkr@gmail.com' target='_blank' rel='gmail'><MdEmailIcon/></a>
                         </SocialContainer>
                     </AboutAside>
                     <AboutMain>
@@ -65,7 +65,7 @@ const AboutSection = () => {
                             <Icon><SiJira/></Icon>
                         </TechStackGroup>
                         <ButtonWrapper>
-                            <ContactButton>Contact me <FaTelegramPlaneIcon/> </ContactButton>
+                            <ContactButton to= 'ContactSection' offset={-80} smooth={true} duration={500} exact='true'>Contact me <FaTelegramPlaneIcon/> </ContactButton>
                         </ButtonWrapper>  
                     </AboutMain>
                 </AboutBodyWrapper>

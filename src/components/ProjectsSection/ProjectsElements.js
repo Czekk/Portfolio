@@ -260,6 +260,10 @@ export const More = styled(Link)`
     @media screen and (max-width: 1080px) {
         display: flex;
     }
+
+    @media screen and (max-width: 768px) {
+        display: none;
+    }
 `
 export const FaChevronDownIcon = styled(FiChevronsDown)`
     color: ${({over}) => (over? '#fff' : '#12263A')};

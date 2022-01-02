@@ -9,9 +9,9 @@ const Footer = () => {
                 <Email>czerintonkr@gmail.com</Email>
                 <Telephone>201-234-1393</Telephone>
                 <SocialContainer>
-                    <BsGithubIcon/>
-                    <BsLinkedinIcon/>
-                    <MdEmailIcon/>
+                    <a href= 'https://github.com/Czekk' target='_blank' rel='Github'><BsGithubIcon /></a>
+                    <a href='https://www.linkedin.com/in/czerinton-kunaraja-8418901b7' target='_blank' rel='LinkdIn'><BsLinkedinIcon /></a>
+                    <a href='mailto:czerintonkr@gmail.com' target='_blank' rel='gmail'><MdEmailIcon/></a>
                 </SocialContainer>
             </FooterContainer>
         </>

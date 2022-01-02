@@ -149,7 +149,7 @@ export const BsGithubIcon = styled(BsGithub)`
     &:hover {
         color: #F4D1AE;
         background: #12263A;
-        font-size: 24px;
+        font-size: 32px;
         box-shadow: 1px 1px 1px 1px lightgrey;
     }
 `
@@ -166,7 +166,7 @@ export const BsLinkedinIcon = styled(BsLinkedin)`
     &:hover {
         color: #F4D1AE;
         background: #12263A;
-        font-size: 24px;
+        font-size: 32px;
         box-shadow: 1px 1px 1px 1px lightgrey;
     }
 `
@@ -185,7 +185,7 @@ export const MdEmailIcon = styled(SiGmail)`
     &:hover {
         color: #12263A;
         background: #F4D1AE;
-        font-size: 24px;
+        font-size: 32px;
         box-shadow: 1px 1px 1px 1px lightgrey;
     }
 `

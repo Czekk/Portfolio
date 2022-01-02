@@ -1,4 +1,4 @@
-import {React, useState} from 'react'
+import {React, useState, useRef, useEffect} from 'react'
 import { FaGithub } from 'react-icons/fa'
 import {CgWebsite} from 'react-icons/cg'
 import { ProjectsBg, ProjectsH1, ProjectsContainer, ProjectsCard, CardImg, ProjectTitle, ProjectsP, ViewBtn, GithubBtn, AboutMeBtn, FaChevronDownIcon, More } from './ProjectsElements'
@@ -7,10 +7,17 @@ import { project1, project2, project3, project4, project5, project6, project7, p
 import { animateScroll as scroll } from 'react-scroll'
 
 const ProjectsSection = () => {
-    const [over, setOver] = useState(0);
+    const [over, setOver] = useState(false);
+    const [sticky, setSticky] = useState(false);
+    const ref = useRef();
+    // const el = ref.current;
+
+    // const observer = new IntersectionObserver(callbackfunction, options)
+    // observer.observe(el)
     const scrollTo = () => {
         scroll.scrollMore(window.innerHeight*.8)
     }
+
     return (
         <>
             <ProjectsBg>
@@ -61,8 +68,10 @@ const ProjectsSection = () => {
                         <GithubBtn href=""><FaGithub/> Checkout the code  </GithubBtn>
                     </ProjectsCard>
                 </ProjectsContainer>
-                <More onClick={scrollTo} duration={500} smooth={true} exact='true' onMouseOver={() => setOver(true)} onMouseLeave={() => setOver(false)}>More <FaChevronDownIcon over = {over}/></More>
-                <AboutMeBtn to='AboutSection' offset={-80} duration={500} smooth={true} exact='true' 
+                <More onClick={scrollTo} duration={500} smooth={true} exact='true' 
+                onMouseOver={() => setOver(true)} onMouseLeave={() => setOver(false)}
+                ref= {ref} sticky={sticky} >More <FaChevronDownIcon over = {over}/></More>
+                <AboutMeBtn to='AboutSection' offset={-80} duration={500} smooth= {true} exact='true' 
                 onMouseOver={() => setOver(true)} onMouseLeave={() => setOver(false)}>About <FaChevronDownIcon over = {over}/></AboutMeBtn>
             </ProjectsBg>  
         </>

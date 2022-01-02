@@ -1,5 +1,4 @@
 import React from 'react';
-// import {Link, NavLink} from 'react-router-dom';
 import {Nav, NavbarContainer, NavLogo, MobileIcon, NavLinks, NavMenu, NavItem, NavButtton, NavButtonLink, SendIcon} from './NavbarElements';
 import {FaBars} from 'react-icons/fa';
 import { useState } from 'react';
@@ -26,7 +25,7 @@ const Navbar = ({toggle}) => {
                             <NavLinks to="HeroSection" onSetActive={heroActive} active= {active[0]} smooth={true} duration={500} spy={true} exact="true" offset={-80} >Welcome</NavLinks>
                         </NavItem>
                         <NavItem>
-                            <NavLinks to="ProjectsSection" onSetActive={projectsActive} active={active[1]} smooth={true} duration={500} spy={true} exact="true" offset={-80} >Projects</NavLinks>
+                            <NavLinks to="ProjectsSection" onSetActive={projectsActive} active={active[1]} smooth={true} duration={500} spy={true} exact="true" offset={-50} >Projects</NavLinks>
                         </NavItem>
                         <NavItem>
                             <NavLinks to="AboutSection" onSetActive={aboutActive} active={active[2]} smooth={true} duration={500} spy={true} exact="true" offset={-80} >About</NavLinks>
