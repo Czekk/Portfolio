@@ -6,9 +6,9 @@ import 'react-toastify/dist/ReactToastify.min.css';
 
 const ContactSection = () => {
     const [state, handleSubmit] = useForm("xbjwlkpz");
-    const formRef = useRef();
+    const formRef = useRef(null);
     const handleField= () => {
-            formRef.current.reset();
+         if(formRef.current ) {formRef.current.reset();}
     };
     const notify = toast.success('Thank you for contacting! I will get back to you soon.', {
         position: "top-center",
@@ -28,11 +28,11 @@ const ContactSection = () => {
                     <ContactH1>Contact me</ContactH1>
                     {state.succeeded?<ToastContainer/>:null}
                     <Form onSubmit={handleSubmit} preventDefault ref={formRef}>
-                        <Label>Name: <Input id="name" name="name" type= 'text'/></Label>
+                        <Label>Name: <Input id="name" name="name" type= 'text' placeholder='John Doe'/></Label>
                         <ValidationError prefix="Name" field="name" errors={state.errors}/>
-                        <Label htmlFor="Email">Email: <Input id="email" name="email" type= 'email'/></Label>
+                        <Label htmlFor="Email">Email: <Input id="email" name="email" type= 'email' placeholder='johnd@email.com'/></Label>
                         <ValidationError prefix="Email" field="email" errors={state.errors} />
-                        <Label>Message: <TextArea id="message"name="message"/></Label>
+                        <Label>Message: <TextArea id="message"name="message" placeholder='your message....'/></Label>
                         <ValidationError prefix="Message" field="message" errors={state.errors}/>
                         <BtnWrapper><Button type ='submit' value="send" onclick={setTimeout(handleField, 5000)} disabled={state.submitting}/></BtnWrapper>
                     </Form>

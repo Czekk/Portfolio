@@ -6,17 +6,17 @@ import { animateScroll as scroll } from 'react-scroll';
 
 
 const Navbar = ({toggle}) => {
-    const [active, setActive] = useState([true, false, false, false]);
-    const heroActive = () => {setActive([true, false, false, false])};
-    const projectsActive = () => { setActive([false, true, false, false])};
-    const aboutActive = () => {setActive([false, false, true, false])};
-    const contactActive = () => { setActive([false, false, false, true])};
+    const [active, setActive] = useState([1, 0, 0, 0]);
+    const heroActive = () => {setActive([1, 0, 0, 0])};
+    const projectsActive = () => { setActive([0, 1, 0, 0])};
+    const aboutActive = () => {setActive([0, 0, 1, 0])};
+    const contactActive = () => { setActive([0, 0, 0, 1])};
     
     return (
         <>
             <Nav className='navbar'>
                 <NavbarContainer className= 'Navbar-container'>
-                    <NavLogo to="/" onClick={scroll.scrollToTop} smooth={true} duration={500}>Czerinton Kunaraja</NavLogo>
+                    <NavLogo to="/" onClick={scroll.scrollToTop} smooth='true' duration={500}>Czerinton Kunaraja</NavLogo>
                     <MobileIcon onClick={toggle}>
                         <FaBars/>
                     </MobileIcon>

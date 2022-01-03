@@ -234,7 +234,7 @@ export const AboutP = styled.p`
     font-size: 18px;
     text-align: justify;
     color: #12263A;
-    margin: 50px 10px;
+    margin: 100px 10px;
     height: 50%;
 
     @media screen and (max-width: 768px) {
@@ -275,7 +275,7 @@ export const ContactButton = styled(Link)`
     border-radius: 50px;
     height: 60%;
     width: 30%;
-    padding: 10px 10px;
+    padding: 0px 10px;
     margin-top: 0px;
     color: #fff;
     text-align: center;
@@ -310,8 +310,4 @@ export const FaTelegramPlaneIcon = styled(FaTelegramPlane)`
     color: #fff;
     font-size: 18px;
     margin-bottom: -4px;
-    &:hover {
-        background: #F4D1AE;
-        color: #12263A;
-    }
 `

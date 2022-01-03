@@ -34,6 +34,7 @@ export const ProjectsH1 = styled.h1`
     // items-align: center;
     font-size: 28px;
     font-weight: bold;
+    background: #fff;
     color: #12263A;
     text-align: center;
     width: 100%;
@@ -62,6 +63,8 @@ export const ProjectsContainer = styled.div`
     flex-direction: row;
     justify-content: center;
     background: #F4EDEA;
+    // background: #fff;
+    border-radius: 10px;
     border-top: 1px solid grey;
     outline: none;
     width: 100%;
@@ -98,9 +101,10 @@ export const ProjectsCard = styled.div`
 
 `
 export const CardImg = styled.img`
-    height: 50%;
+    height: 60%;
     width: 100%;
     z-index: 999;
+    object-fit: contain;
 `
 
 export const ProjectTitle = styled.h2`
@@ -228,7 +232,7 @@ export const AboutMeBtn = styled(Link)`
         display: none;
     }
 `
-export const More = styled(Link)`
+export const More = styled.button`
     display: none;
     justify-content: center;
     position: sticky;

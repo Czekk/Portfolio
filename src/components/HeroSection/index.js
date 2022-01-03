@@ -14,11 +14,11 @@ export const HeroSection = () => {
     return (
         <HeroContainer>
             <HeroBg>
-                <VideoBg autoPlay loop muted src= {Video} type='video/mp4' disablePictureInPicture/>
+                <VideoBg autoPlay loop muted src= {Video} type='video/mp4' alt='background video of peaks' disablePictureInPicture/>
             </HeroBg>
             <HeroContent>
                 <HeroH1>
-                    Hello, Welcome to my page!
+                    Hello, welcome to my page!
                 </HeroH1>
                 <Typical steps= {
                 ['I am a Full-stack (MERN) application developer', 500, 
@@ -32,7 +32,7 @@ export const HeroSection = () => {
                 wrapper= {HeroP}
                 />
                 <HeroBtnWrapper>
-                    <Button to='ProjectsSection' onMouseEnter = {onHover} onMouseLeave = {onHover} primary= 'true' dark= 'true' duration={500} smooth={true} offset={-80} exact='true'>View my projects {hover? <ArrowDown/>:<ArrowCircleDown/>}</Button>
+                    <Button to='ProjectsSection' onMouseEnter = {onHover} onMouseLeave = {onHover} primary= 'true' dark= 'true' duration={500} smooth='true' offset={-80} exact='true'>View my projects {hover? <ArrowDown/>:<ArrowCircleDown/>}</Button>
                 </HeroBtnWrapper>
             </HeroContent>
         </HeroContainer>

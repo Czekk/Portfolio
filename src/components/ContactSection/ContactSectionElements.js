@@ -1,4 +1,4 @@
-import { ToastContainer } from "react-toastify";
+
 import styled from "styled-components";
 
 export const ContactBg = styled.div`
@@ -135,5 +135,10 @@ export const Button = styled.input`
         background: #F4EDEA;
         color: #12263A;
         cursor: pointer;
+    }
+
+    &: disabled {
+        background: silver;
+        color: grey;
     }
 `

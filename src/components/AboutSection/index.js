@@ -1,11 +1,11 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { FaBootstrap, FaCss3Alt, FaDocker, FaHtml5, FaLinux, FaNodeJs, FaNpm, FaReact, FaPython, FaJava, FaGit, FaAws } from 'react-icons/fa'
 import {IoLogoJavascript} from 'react-icons/io'
 import {SiExpress, SiMongodb, SiKubernetes, SiTypescript, SiJira} from 'react-icons/si'
 import { AboutContainer, AboutBodyWrapper, AboutAside, ProfileImgContainer, ProfileImg, ProfileDescription, SocialContainer,
      AboutMain, AboutH1, AboutP, BsGithubIcon, BsLinkedinIcon, MdEmailIcon, Name, Title, Icon, 
      ContactButton, FaTelegramPlaneIcon, ButtonWrapper, TechStackGroup } from './AboutSectionElements'
-import ProfilePic2 from '../../images/ProfilePic2.jpeg'
+import ProfilePic2 from '../../images/ProfilePic2.webp'
 
 const AboutSection = () => {
     return (
@@ -30,9 +30,9 @@ const AboutSection = () => {
                             <Title>Cross-platform ios and Android mobile development</Title> */}
                         </ProfileDescription>
                         <SocialContainer>
-                            <a href= 'https://github.com/Czekk' target='_blank' rel='Github'><BsGithubIcon /></a>
-                            <a href='https://www.linkedin.com/in/czerinton-kunaraja-8418901b7' target='_blank' rel='LinkdIn'><BsLinkedinIcon /></a>
-                            <a href='mailto:czerintonkr@gmail.com' target='_blank' rel='gmail'><MdEmailIcon/></a>
+                            <a href= 'https://github.com/Czekk' target='_blank' rel='noreferrer'><BsGithubIcon /></a>
+                            <a href='https://www.linkedin.com/in/czerinton-kunaraja-8418901b7' target='_blank' rel='noreferrer'><BsLinkedinIcon /></a>
+                            <a href='mailto:czerintonkr@gmail.com' target='_blank'  rel='noreferrer'><MdEmailIcon/></a>
                         </SocialContainer>
                     </AboutAside>
                     <AboutMain>
@@ -65,7 +65,7 @@ const AboutSection = () => {
                             <Icon><SiJira/></Icon>
                         </TechStackGroup>
                         <ButtonWrapper>
-                            <ContactButton to= 'ContactSection' offset={-80} smooth={true} duration={500} exact='true'>Contact me <FaTelegramPlaneIcon/> </ContactButton>
+                            <ContactButton to='ContactSection' offset={-80} smooth='true' duration={500} exact='true'>Contact me <FaTelegramPlaneIcon /> </ContactButton>
                         </ButtonWrapper>  
                     </AboutMain>
                 </AboutBodyWrapper>
