@@ -21,6 +21,9 @@ const ContactSection = () => {
         toastId: 'sucess01'
         });
 
+const onChangeName = (e) =>{
+    e.preventDefault();
+}
     return (
         <>
             <ContactBg>
@@ -28,11 +31,11 @@ const ContactSection = () => {
                     <ContactH1>Contact me</ContactH1>
                     {state.succeeded?<ToastContainer/>:null}
                     <Form onSubmit={handleSubmit} preventDefault ref={formRef}>
-                        <Label>Name: <Input id="name" name="name" type= 'text' placeholder='John Doe'/></Label>
+                        <Label>Name: <Input id="name" name="name" type= 'text' placeholder='John Doe' required/></Label>
                         <ValidationError prefix="Name" field="name" errors={state.errors}/>
-                        <Label htmlFor="Email">Email: <Input id="email" name="email" type= 'email' placeholder='johnd@email.com'/></Label>
+                        <Label htmlFor="Email">Email: <Input id="email" name="email" type= 'email' placeholder='johnd@email.com' required/></Label>
                         <ValidationError prefix="Email" field="email" errors={state.errors} />
-                        <Label>Message: <TextArea id="message"name="message" placeholder='your message....'/></Label>
+                        <Label>Message: <TextArea id="message"name="message" placeholder='your message....' required/></Label>
                         <ValidationError prefix="Message" field="message" errors={state.errors}/>
                         <BtnWrapper><Button type ='submit' value="send" onclick={setTimeout(handleField, 5000)} disabled={state.submitting}/></BtnWrapper>
                     </Form>

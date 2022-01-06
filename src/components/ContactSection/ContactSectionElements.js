@@ -129,6 +129,7 @@ export const Button = styled.input`
     outline: none;
     border: none;
     z-index: 99;
+    box-shadow: 1px 1px 1px 1px lightgrey;
     
 
     &:hover {
