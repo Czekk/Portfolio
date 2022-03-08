@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React from 'react'
 import { FaBootstrap, FaCss3Alt, FaDocker, FaHtml5, FaLinux, FaNodeJs, FaNpm, FaReact, FaPython, FaJava, FaGit, FaAws } from 'react-icons/fa'
 import {IoLogoJavascript} from 'react-icons/io'
 import {SiExpress, SiMongodb, SiKubernetes, SiTypescript, SiJira} from 'react-icons/si'
@@ -20,14 +20,6 @@ const AboutSection = () => {
                             <Name>Czerinton Kunaraja</Name>
                             <Title>B.Sc Computer Science</Title>
                             <Title>FullStack Application Developer</Title>
-                            {/* <hr/>
-                            <Title><strong>Skills: </strong></Title>
-                            <Title>Responsive design</Title>
-                            <Title>Reusable Component Development</Title>
-                            <Title>Test Driven Development</Title>
-                            <Title>Containerization / Dockerize</Title>
-                            <Title>MicroServices Architecture</Title>
-                            <Title>Cross-platform ios and Android mobile development</Title> */}
                         </ProfileDescription>
                         <SocialContainer>
                             <a href= 'https://github.com/Czekk' target='_blank' rel='noreferrer'><BsGithubIcon /></a>
@@ -40,9 +32,11 @@ const AboutSection = () => {
                             About
                         </AboutH1>
                         <AboutP>
-                        I have worked in both front and backend. I have exeprience working with ReactJs library, Bootstrap, Styled-Components, flutter (Cross-platform mobile).
-                        I have gained responsive, mobile friendly, reusable and test driven development skills from my personel and professional projects.
-                        I have worked with NodeJs, Express, MongoDb, Kubernetes, Docker and Python backend technologies.
+                        I have experience working in both frontend and backend technologies. I have gained skills in responsive design,
+                         mobile friendly development, reusable components, 
+                        REST api and test driven development from my personal and professional projects.
+                        I have worked with ReactJS library, Bootstrap, Styled-Components, flutter 
+                        (Cross-platform mobile development), NodeJs, ExpressJS, MongoDB, Kubernetes, and Docker technologies. 
                         </AboutP>
                         <TechStackGroup>
                             <Icon><FaHtml5/></Icon>

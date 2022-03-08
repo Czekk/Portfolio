@@ -10,7 +10,7 @@ const ContactSection = () => {
     const handleField= () => {
          if(formRef.current ) {formRef.current.reset();}
     };
-    const notify = toast.success('Thank you for contacting! I will get back to you soon.', {
+    const notify = toast.success('Thank you for contacting me! I will get back to you soon.', {
         position: "top-center",
         autoClose: false,
         hideProgressBar: false,
@@ -21,9 +21,6 @@ const ContactSection = () => {
         toastId: 'sucess01'
         });
 
-const onChangeName = (e) =>{
-    e.preventDefault();
-}
     return (
         <>
             <ContactBg>
@@ -39,7 +36,7 @@ const onChangeName = (e) =>{
                         <ValidationError prefix="Message" field="message" errors={state.errors}/>
                         <BtnWrapper><Button type ='submit' value="send" onclick={setTimeout(handleField, 5000)} disabled={state.submitting}/></BtnWrapper>
                     </Form>
-
+                    <p style={{display: "none"}}>{notify}</p>
                 </ContactCard>
             </ContactBg>
         </>

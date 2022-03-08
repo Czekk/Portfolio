@@ -305,6 +305,20 @@ export const ContactButton = styled(Link)`
         justify-content: center;
         transition: all 0.2s ease-in-out;
     }
+    @media screen and (max-width: 320px) {
+        display: flex;
+        justify-content: center;
+        width: 45%;
+        height: 80%;
+        padding: 0px 10px;
+        padding-bottom: 10px;
+        margin-top: 15px;
+        text-align: center;
+        font-size: 1.0rem;
+        box-shadow: 1px 1px 1px 1px lightgrey;
+        justify-content: center;
+        transition: all 0.2s ease-in-out;
+    }
 `
 export const FaTelegramPlaneIcon = styled(FaTelegramPlane)`
     color: #fff;
