@@ -126,7 +126,7 @@ export const ProjectsP = styled.p`
     width: 100%;
     height: 20%;
 `
-export const ViewBtn = styled.button`
+export const ViewBtn = styled.a`
     border-radius: 5px;
     display: flex;
     background: #12263A;
@@ -138,6 +138,7 @@ export const ViewBtn = styled.button`
     font-weight: bold;
     outline: none;
     border: none;
+    text-decoration: none;
     box-shadow: 2px 2px 2px 2px lightgrey;
     cursor: pointer;
     justify-content: center;
@@ -163,7 +164,7 @@ export const ViewBtn = styled.button`
         transition: all 0.2s ease-in-out;
     }
 `
-export const GithubBtn = styled.button`
+export const GithubBtn = styled.a`
 border-radius: 5px;
 display: flex;
 background: #12263A;
@@ -173,6 +174,7 @@ margin-top: 5px;
 white-space: nowrap;
 font-size: 14px;
 font-weight: bold;
+text-decoration: none;
 outline: none;
 border: none;
 box-shadow: 2px 2px 2px 2px lightgrey;

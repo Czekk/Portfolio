@@ -25,15 +25,15 @@ const ProjectsSection = () => {
                         <CardImg src={project1.img} />
                         <ProjectTitle>{project1.title}</ProjectTitle>
                         <ProjectsP>{project1.description}</ProjectsP>
-                        <ViewBtn href= ""><CgWebsite/> View Project  </ViewBtn>
-                        <GithubBtn href=""><FaGithub/> Checkout the code  </GithubBtn>
+                        <ViewBtn href= "https://cocky-payne-0b8eaa.netlify.app" target='_blank' rel='norefferer'><CgWebsite/> View Project  </ViewBtn>
+                        <GithubBtn href="https://github.com/Czekk/MrKtLine-Financial-App-Complete.git" target='_blank' rel='git hub project page'><FaGithub/> Checkout the code  </GithubBtn>
                     </ProjectsCard>
                     <ProjectsCard>
                         <CardImg src={project2.img} />
                         <ProjectTitle>{project2.title}</ProjectTitle>
                         <ProjectsP>{project2.description}</ProjectsP>
                         <ViewBtn href= ""><CgWebsite/> View Project  </ViewBtn>
-                        <GithubBtn href=""><FaGithub/> Checkout the code  </GithubBtn>
+                        <GithubBtn href="https://github.com/Czekk/FlickReview.git" target={'_blank'} rel='git hub project page'><FaGithub/> Checkout the code  </GithubBtn>
                     </ProjectsCard>
                     <ProjectsCard>
                         <CardImg src={project3.img} />

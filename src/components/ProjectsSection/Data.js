@@ -1,7 +1,7 @@
 export const project1 = {
     title: 'Financial Dash Board',
     description: 'A MERN stack responsive site built with MongoDB, Express, ReactJs, and NodeJs',
-    img: require('../../images/inprogress.webp'),
+    img: require('../../images/financialApp.webp'),
     projectLink: '',
     gitHubLink: ''
 }

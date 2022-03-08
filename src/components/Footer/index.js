@@ -5,7 +5,7 @@ const Footer = () => {
     return (
         <>
             <FooterContainer>
-                <Address>123 Some Street, City, State, USA 08080</Address>
+                <Address>123 Some Street, City, State, USA 11100</Address>
                 <Email>czerintonkr@gmail.com</Email>
                 <Telephone>201-234-1393</Telephone>
                 <SocialContainer>
