@@ -1,15 +1,15 @@
 export const project1 = {
     title: 'Financial Dash Board',
-    description: 'A MERN stack responsive site built with MongoDB, Express, ReactJs, and NodeJs',
+    description: 'A MERN stack responsive application built with MongoDB, Express, ReactJs, and NodeJs',
     img: require('../../images/financialApp.webp'),
     projectLink: '',
     gitHubLink: ''
 }
 
 export const project2 = {
-    title: 'Flick Review (In-progress)',
-    description: 'A MERN stack movie review site built with MongoDB, Express, ReactJs, and NodeJs',
-    img: require('../../images/inprogress.webp'),
+    title: 'Flick Review',
+    description: 'A MERN stack movie review application built with MongoDB, Express, ReactJs, Bootstrap5 and NodeJs',
+    img: require('../../images/FlickReview.webp'),
     projectLink: '',
     gitHubLink: ''
 }

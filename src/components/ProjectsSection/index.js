@@ -32,8 +32,8 @@ const ProjectsSection = () => {
                         <CardImg src={project2.img} />
                         <ProjectTitle>{project2.title}</ProjectTitle>
                         <ProjectsP>{project2.description}</ProjectsP>
-                        <ViewBtn href= ""><CgWebsite/> View Project  </ViewBtn>
-                        <GithubBtn href="https://github.com/Czekk/FlickReview.git" target={'_blank'} rel='git hub project page'><FaGithub/> Checkout the code  </GithubBtn>
+                        <ViewBtn href= "https://adoring-snyder-f67a64.netlify.app" target={'_blank'} rel='Flick Review Application'><CgWebsite/> View Project  </ViewBtn>
+                        <GithubBtn href="https://github.com/Czekk/FlickReview-Complete.git" target={'_blank'} rel='git hub project page'><FaGithub/> Checkout the code  </GithubBtn>
                     </ProjectsCard>
                     <ProjectsCard>
                         <CardImg src={project3.img} />
